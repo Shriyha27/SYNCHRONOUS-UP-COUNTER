@@ -30,17 +30,40 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 /* write all the steps invloved */
 
+1.Open quartus II and create New project wizard.
+2. Write the program in Verilog HDL file and run the program.
+3. Download the RTL viewer 
+4. Now open university program VWF and download waveform after the execution.
+
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+module exp_11(out,clk,rstn);
+input clk,rstn;
+output reg [3:0]out;
+always @(posedge clk)
+begin
+  if(!rstn)
+    out<=0;
+  else
+    out<= out+1;
+end 
+endmodule
+
+Developed by: V.Shriyha 
+RegisterNumber: 24007606
 
 **RTL LOGIC UP COUNTER**
 
+![WhatsApp Image 2024-12-09 at 13 27 38_f0b25b02](https://github.com/user-attachments/assets/48f4ec55-1d85-4fde-899c-1d210fe392b6)
+
+
 **TIMING DIAGRAM FOR IP COUNTER**
 
-**TRUTH TABLE**
+![WhatsApp Image 2024-12-09 at 13 27 38_f0b25b02](https://github.com/user-attachments/assets/31ccdcf2-a3d9-4cd8-ae77-5ed51bf9106a)
+
 
 **RESULTS**
+
+Thus the 4 bit synchronous up counter is executed and the truth table is verified.
