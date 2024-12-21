@@ -39,6 +39,7 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
+```
 module exp_11(out,clk,rstn);
 input clk,rstn;
 output reg [3:0]out;
@@ -50,6 +51,8 @@ begin
     out<= out+1;
 end 
 endmodule
+```
+
 
 Developed by: V.Shriyha 
 RegisterNumber: 24007606
@@ -61,7 +64,8 @@ RegisterNumber: 24007606
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
-![WhatsApp Image 2024-12-09 at 13 27 38_f0b25b02](https://github.com/user-attachments/assets/31ccdcf2-a3d9-4cd8-ae77-5ed51bf9106a)
+![baed5d58-d52f-4a49-8902-9a719272c306](https://github.com/user-attachments/assets/3921c14f-18b3-4484-a843-a083dc0f9b0f)
+
 
 
 **RESULTS**
